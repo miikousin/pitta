@@ -13,7 +13,7 @@ pitta
 ２．投稿画面のフォームをすべて入力して投稿する
 
 # アプリケーションを作成した背景
-周囲の子育て世帯からヒアリングをし、「子供の服がブランドによってサイズ感が違うので、結局同じブランドばかりになってしまう」という悩みを抱えていることを知った。
+周囲の子育て世帯からヒアリングをし、「子供の服がブランドによってサイズ感が違く、ちょうどよいサイズを見つけづらいので、結局同じブランドばかりになってしまう」という悩みを抱えていることを知った。
 サイズの表記の基準がブランドによって差があることが原因だと仮説を立てた。
 そこで５歳までの子供服に絞って服のフィット感を共有することに特化したアプリ開発をすることにした。
 
@@ -39,9 +39,9 @@ https://docs.google.com/spreadsheets/d/1OdLULxcdf9HYA0uer1tAYz8CYPh7cTTE2X2OQkLi
 | height    | integer | null: false |
 | weight    | integer | null: false |
 ### Association
-has_many :posts
-has_many :favorites
-has_many :favorite_posts, through: :favorites, source: :post <!-- Userは多数のfavorite_postsを持つ。これはfavoritesを経由している-->
+- has_many :posts
+- has_many :favorites
+- has_many :favorite_posts, through: :favorites, source: :post <!-- Userは多数のfavorite_postsを持つ。これはfavoritesを経由している-->
 
 ## postsテーブル
 | Column     | Type       | Options     |
@@ -53,9 +53,9 @@ has_many :favorite_posts, through: :favorites, source: :post <!-- Userは多数�
 | fit_id     | integer    | null: false |(ActiveHash - Fit)
 | comment    | text       | null: false |
 ### Association
-belongs_to :user
-has_many :favorites
-has_many :favorited_by, through: :favorites, source: :user
+- belongs_to :user
+- has_many :favorites
+- has_many :favorited_by, through: :favorites, source: :user
 
 ## favoritesテーブル
 | Column | Type       | Options     |
@@ -63,5 +63,5 @@ has_many :favorited_by, through: :favorites, source: :user
 | user   | references | null: false, foreign_key: true |
 | post   | references | null: false, foreign_key: true |
 ### Association
-belongs_to :user
-belongs_to :post
+- belongs_to :user
+- belongs_to :post

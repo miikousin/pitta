@@ -23,9 +23,9 @@ https://docs.google.com/spreadsheets/d/1OdLULxcdf9HYA0uer1tAYz8CYPh7cTTE2X2OQkLi
 ## 実装した機能についての画像やGIFおよびその説明
 ## 実装予定の機能
 ## データベース設計
-![ER図](assets/images/pitta.png")
+![ER図](pitta/app/assets/images/pitta.png")
 ## 画面遷移図
-![画面遷移図](assets/images/pitta.drawio.png")
+![画面遷移図](pitta/app/assets/images/pitta.drawio.png")
 ## 開発環境
 ## ローカルでの動作方法
 ## 工夫したポイント

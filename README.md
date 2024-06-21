@@ -25,7 +25,7 @@ https://docs.google.com/spreadsheets/d/1OdLULxcdf9HYA0uer1tAYz8CYPh7cTTE2X2OQkLi
 ## データベース設計
 ![ER図](assets/images/pitta.png")
 ## 画面遷移図
-![画面遷移図](assets/images/pitta.senni.png")
+![画面遷移図](assets/images/pitta.drawio.png")
 ## 開発環境
 ## ローカルでの動作方法
 ## 工夫したポイント

@@ -50,6 +50,7 @@ test:
 #
 production:
   <<: *default
+  adapter: postgresql
   database: pitta_production
   username: pitta
   password: <%= ENV["PITTA_DATABASE_PASSWORD"] %>

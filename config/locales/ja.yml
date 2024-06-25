@@ -7,6 +7,7 @@ ja:
       user:
         email: メールアドレス
         password: パスワード
+        password_confirmation: パスワード確認
         nickname: ニックネーム
         age_id: 年齢
         gender_id: 性別
@@ -17,3 +18,6 @@ ja:
       presence: "を入力してください"
       blank: "を入力してください"
       not_a_number: "を選択してください"
+      too_short: "は%{count}文字以上で入力してください"
+      confirmation: "と%{attribute}の入力が一致しません"
+      other_than: "%{count}以外の値にしてください"

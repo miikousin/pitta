@@ -6,10 +6,11 @@ class User < ApplicationRecord
   belongs_to :age
   belongs_to :gender
 
-  validates :nickname, presence: true
-  validates :height, presence: true, numericality: true
-  validates :weight, presence: true, numericality: true
+  validates :nickname, presence: { message: 'を入力してください' }
+  validates :height, presence: { message: 'を入力してください' }, numericality: { message: 'は数値で入力してください' }
+  validates :weight, presence: { message: 'を入力してください' }, numericality: { message: 'は数値で入力してください' }
   validates :age_id, numericality: { other_than: 1 }# id:1以外のときに保存できる
   validates :gender_id, numericality: { other_than: 1 }
 
 end
+

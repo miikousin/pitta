@@ -1,0 +1,19 @@
+ja:
+  activerecord:
+    models: 
+      user: ユーザー
+    #カラムの指定
+    attributes:
+      user:
+        email: メールアドレス
+        password: パスワード
+        nickname: ニックネーム
+        age_id: 年齢
+        gender_id: 性別
+        height: 身長
+        weight: 体重
+  errors:
+    messages:
+      presence: "を入力してください"
+      blank: "を入力してください"
+      not_a_number: "を選択してください"
